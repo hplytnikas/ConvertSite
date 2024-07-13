@@ -1,18 +1,10 @@
 from flask import Flask, request, jsonify, send_file
-import test    # Importing the test.py file
 import Converter
 from flask_cors import CORS
 import os
 
 app = Flask(__name__)
 CORS(app, expose_headers=['Content-Disposition'])
-
-@app.route('/call-function', methods=['POST'])
-def call_function():
-    data = request.json
-    link = data['link']
-    result = test.check_hello(link) 
-    return jsonify(result)
 
 @app.route('/convert', methods=['POST'])
 def convert():
