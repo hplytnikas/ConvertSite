@@ -1,0 +1,38 @@
+/* style.css */
+
+/* Add your CSS styles here */
+.title,
+.desc{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* Add any other styles you want here */
+}
+
+.desc {
+    font-family: Arial, sans-serif;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Input_s[type="text"] {
+    width: 30%;
+    height: 20px;
+    padding: 3px;
+    font-size: 15px;
+    margin: 5px;
+    /* Add any other styles you want here */
+}
+
+.Button_s {
+    height: 30px;
+    font-size: 15px;
+}
+
+.Input_pad {
+    padding: 10px;
+}
+
