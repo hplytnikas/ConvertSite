@@ -50,8 +50,8 @@ def convert_audio(link):
     SAVE_PATH = os.path.dirname(os.path.abspath(__file__))
     SAVE_PATH = os.path.join(SAVE_PATH, str(count_folders(SAVE_PATH)))
     try:
-        yt = YouTube(link) 
-    except Exception as e: 
+        yt = YouTube(link)
+    except Exception as e:
         print("Connection Error: ", e)
     audio_streams = yt.streams.filter(only_audio=True).first()
     try: 
@@ -79,4 +79,4 @@ if __name__ == '__main__':
     # name = input("Enter the name of the file: ")
     # link = input("Enter the link of the video: ")
     # convert(link, name)
-    convert_audio("https://www.youtube.comx/watch?v=kJQP7kiw5Fk")
+    convert_audio("https://www.youtube.com/watch?v=iaGjz4dtr3o")
