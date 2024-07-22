@@ -22,5 +22,5 @@ def convert():
         return jsonify({"error": str(e)}), 500
     
 if __name__ == '__main__':
-    app.run(debug=False)
-    # app.run(host='0.0.0.0', port=5001) # Use this line if you want to run the server on your local network
+    # app.run(debug=False)
+    app.run(host='0.0.0.0', port=5000) # Use this line if you want to run the server on your local network
