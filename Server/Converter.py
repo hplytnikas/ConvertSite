@@ -19,7 +19,8 @@ def convert(link, name):
 
 def convert_video():
     # where to save 
-    SAVE_PATH = r"C:\Users\plytn\Downloads\YTConverter"
+    # SAVE_PATH = r"C:\Users\plytn\Downloads\YTConverter"
+    SAVE_PATH = os.path.dirname(os.path.abspath(__file__))
 
     # link of the video to be downloaded 
     link = "https://www.youtube.com/watch?v=kJQP7kiw5Fk"
@@ -46,7 +47,7 @@ def convert_video():
 
 def convert_audio(link):
     # where to save 
-    SAVE_PATH = r"C:\Users\plytn\Downloads\YTConverter"
+    SAVE_PATH = os.path.dirname(os.path.abspath(__file__))
     SAVE_PATH = os.path.join(SAVE_PATH, str(count_folders(SAVE_PATH)))
     try:
         yt = YouTube(link) 

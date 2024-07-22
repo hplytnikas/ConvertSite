@@ -1,0 +1,5 @@
+Flask==3.0.3
+Flask_Cors==3.0.10
+pytube==15.0.0
+pytube3==9.6.4
+youtube_dl==2021.12.17
