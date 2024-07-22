@@ -20,6 +20,9 @@ def convert():
     except Exception as e:
         print("error: ", e)
         return jsonify({"error": str(e)}), 500
+@app.route('/test', methods=['GET'])
+def test():
+    return "Hello World!"
     
 if __name__ == '__main__':
     # app.run(debug=False)
