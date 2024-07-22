@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     submitButton.addEventListener('click', function() {
         const inputValue = inputElement.value;
         // fetch('http://127.0.0.1:5000/convert', {
-        fetch('http://78.60.133.53:5001/convert', { // Use the IP address of the server (e.g. ')
+        // fetch('http://78.60.133.53:5001/convert', { // Use the IP address of the server (e.g. ')
+        fetch('http://localhost:5001/convert', { // Server running on the same machine
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
