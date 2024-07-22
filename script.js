@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitButton = document.querySelector('.Button_s');
     const responseElement = document.querySelector('.Response_s');
 
-    fetch('http://127.0.0.1:5000/test')
+    fetch('http://127.0.0.1:5001/test')
     .then(response => response.text())
     .then(text => console.log(text))
     .catch(error => console.error('Error:', error));
